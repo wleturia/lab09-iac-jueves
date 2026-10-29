@@ -18,4 +18,4 @@ jobs:
               env: 
                 TEXTO: ${{ secrets.NOMBRE_SECRETO }}
               run: |
-                echo "Mi secreto es $TEXTO. ${{secrets.NOMBRE_SECRETO}} $NOMBRE"
+                echo "Mi secreto es $TEXTO. ${{secrets.NOMBRE_SECRETO}} ${{vars.NOMBRE}}"
